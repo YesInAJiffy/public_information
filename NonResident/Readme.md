@@ -108,6 +108,9 @@ If you are living abroad and qualify as a **Non-Resident Indian (NRI)** under In
   * PAN card
 * The bank will redesignate your resident savings account as **NRO/NRE**.
 
+### Information for HDFC Bank
+https://www.hdfcbank.com/nri-banking/resident-to-nro-conversion-process
+
 ---
 
 ## ⚖️ Why It Matters
