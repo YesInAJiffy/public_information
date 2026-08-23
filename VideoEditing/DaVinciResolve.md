@@ -28,3 +28,168 @@ After adjusting the mode and sliders, click the **Stabilize** button at the top 
 * **Relative:** Keeps your mix balance intact so background music stays at its quiet level relative to your voice.
 
 Click **Normalize** and your audio levels are good to go!
+
+# Sound Control
+
+Equalization (EQ) shapes how audio sounds by boosting or cutting specific frequency ranges. Human hearing spans roughly **20 Hz (deep bass)** to **20,000 Hz / 20 kHz (high treble)**, and these settings clean up unwanted noise while highlighting the best traits of a vocal track.
+
+---
+
+### Key Concepts Demystified
+
+* **Pass / Cut Filters:**
+* A **High Pass Filter (Low Cut)** lets high frequencies *pass through* while *cutting out* low frequencies below a set threshold.
+* A **Low Pass Filter (High Cut)** lets low frequencies pass through while cutting out high frequencies above a set threshold.
+
+
+* **Gain (dB):** Controls volume adjustment for a specific frequency band. Positive numbers (+dB) **boost** (loudness), while negative numbers (-dB) **cut** (attenuate).
+* **Frequency (Hz / kHz):** Targets the exact pitch center you want to adjust ($1\text{ kHz} = 1,000\text{ Hz}$).
+* **Q (Quality Factor):** Determines how wide or narrow the curve around your targeted frequency is. A higher Q narrows the focus to pinpoint specific issues; a lower Q creates broader, smoother adjustments.
+
+---
+
+### Band-by-Band Application Guide
+
+**Band 1: High Pass Filter (Low Cut)**
+
+* **What it does:** Removes deep background rumble (HVAC systems, mic bumps, heavy traffic) that consumes headroom without adding value to a vocal. Human speech rarely produces useful frequencies below 80 Hz.
+* **How to set it in Fairlight:**
+1. Click the **Band 1** button at the top to enable it.
+2. Select the **High Pass / Low Cut icon** (the curve dipping down on the left).
+3. Turn the **Frequency knob** (top row) to **80 Hz – 90 Hz** (or type `80` in the text box).
+4. Leave **Gain** at `0.0 dB` (filters slope off automatically).
+
+
+
+**Band 3: Mid-Frequency Dip (Clarity / De-box)**
+
+* **What it does:** Small rooms, cheap desk mics, and phone recordings accumulate unwanted resonance around 200 Hz – 500 Hz, making voice audio sound like it was recorded inside a cardboard box.
+* **How to set it in Fairlight:**
+1. Enable **Band 3** and choose the **Bell / Bandpass shape** (the bell curve icon).
+2. Set **Frequency** to **350 Hz**.
+3. Turn the **Gain knob** (middle row) down to **-2.0 dB** or **-3.0 dB**.
+
+
+
+**Band 5: Presence Boost**
+
+* **What it does:** Consonants (like *T*, *K*, *P*, *S*) live around 3 kHz to 5 kHz. Subtle boosting enhances speech intelligibility and helps vocals cut through background music.
+* **How to set it in Fairlight:**
+1. Enable **Band 5**.
+2. Set **Frequency** to **3500 Hz** (3.5 kHz).
+3. Set **Gain** to **+1.5 dB**.
+
+
+
+**Band 6: Air / High Shelf Boost**
+
+* **What it does:** Frequencies above 10 kHz add open, polished "breathiness" and brightness (referred to as "air") without making speech harsh.
+* **How to set it in Fairlight:**
+1. Enable **Band 6** and select either a **High Shelf** icon (flat plateau on the right) or a standard bell curve.
+2. Set **Frequency** to **10000 Hz** (10 kHz).
+3. Set **Gain** to **+1.0 dB**.
+<img width="824" height="570" alt="image" src="https://github.com/user-attachments/assets/b3a66ece-32b3-4f71-8e75-e46da65248c9" />
+
+* **Band 1:** High Pass / Low Cut shape set to **80 Hz** (0.0 dB gain) to filter out room rumble.
+* **Band 3:** Bell shape set to **350 Hz** at **-3.0 dB** to clean up boxy mid-range resonance.
+* **Band 5:** High Shelf shape set to **3500 Hz** (3.5 kHz) boosted by **+1.5 dB** for vocal presence.
+* **Band 6:** High Shelf shape set to **10000 Hz** (10 kHz) boosted by **+1.0 dB** for high-end air and shine.
+
+You are all set to listen to your audio track with these EQ parameters active.
+
+
+Compression automatically controls the volume of your audio by taming loud peaks and lifting quieter moments, creating a smooth, consistent sound.
+
+---
+
+### What Compression Means
+
+Think of a compressor as an automated sound engineer with their hand on the volume fader. When you speak or sing softly, they leave the volume alone. When you yell or hit a loud note, they instantly turn the volume down so it does not distort or startle the listener.
+
+By squashing the dynamic range (the gap between the quietest and loudest parts), compression makes every word easy to hear without requiring the audience to constantly adjust their volume.
+
+---
+
+### Key Compression Terms Explained
+
+* **Threshold:** The volume cutoff point. The compressor ignores any audio *below* this level and only starts working when the audio goes *above* it.
+* **Ratio:** How much the audio is turned down once it crosses the threshold. A **3:1 ratio** means for every 3 dB the signal exceeds the threshold, only 1 dB is allowed through. Higher ratios equal stronger control.
+* **Attack:** How fast (in milliseconds) the compressor reacts and turns down the volume after the sound crosses the threshold.
+* **Release:** How quickly (in milliseconds) the compressor lets go and returns the volume to normal after the sound drops back below the threshold.
+* **Gain Reduction (GR):** The meter showing exactly how many decibels of volume the compressor is actively cutting during loud moments.
+
+---
+
+### Step-by-Step Setup in Fairlight
+
+1. **Open Dynamics:** On your track strip in the Fairlight Mixer, double-click the **Dynamics** box (located just above or below the EQ box).
+2. **Enable Compressor:** Click the **Compressor** toggle switch to turn it on (it will highlight yellow/orange).
+3. **Set Ratio:** Adjust the **Ratio** knob or type in `3.0` (or `4.0` for punchier control).
+4. **Set Attack & Release:**
+* Set **Attack** to `10 ms` (fast enough to catch loud peaks, slow enough to preserve natural word punch).
+* Set **Release** to `100 ms` (smoothly fades back to normal without creating an unnatural "pumping" sound).
+
+
+5. **Adjust Threshold while Listening:** Play your audio track. Lower the **Threshold** knob down toward `-18 dB` to `-20 dB`.
+* Watch the **Gain Reduction (GR)** meter.
+* Aim for the GR meter to tick down by **-2 dB to -5 dB** during your louder spoken words or notes. If it never moves, lower the threshold further; if it stays pinned down constantly, raise the threshold.
+
+<img width="1199" height="966" alt="image" src="https://github.com/user-attachments/assets/fa56faf2-b9a1-4357-8b8c-8f4f7390af6d" />
+
+Your setup is **100% correct** and perfectly matches all required compression parameters.
+
+**Verification Breakdown:**
+
+* **Compressor Status:** **ON** (red indicator illuminated above the section).
+* **Threshold:** Set to **-20.0 dB** (ideal spot for catching loud spoken peaks).
+* **Ratio:** Set to **3.0:1** (provides smooth, natural volume control).
+* **Attack:** Set to **10 ms** (preserves initial word clarity before compressing).
+* **Release:** Set to **100 ms** (recovers smoothly without volume pumping).
+* **Mix:** Set to **100** (fully applying the compressed audio to your track).
+* **Expander/Gate & Limiter:** Correctly left **OFF**.
+
+You can see the green dots on the transfer graph displaying your live audio passing right through the compression threshold. Your vocal track is now set up with both proper EQ and smooth compression.
+
+For singing, reverb needs to sound smooth, expansive, and flattering without muddying up the vocal tone or drowning out the words.
+
+Here are the ideal settings to apply in the Fairlight Reverb panel:
+
+---
+
+### Recommended Settings for Singing
+
+* **Preset:** Change top preset from *Small Theatre* to **Plate** or **Medium Hall** (provides a classic, silky vocal trailing sound).
+* **Reverb Time:** Set between **1.20 s and 1.80 s** (gives a smooth, musical tail instead of cutting off abruptly at 286 ms).
+* **Pre-Delay:** Set to **30 ms – 50 ms** (delays the onset of reverb slightly so the lead voice stays crisp and upfront before the echo fills in).
+* **Dry/Wet:** Set to **8.00% – 12.00%** (blends enough effect to make the voice sound rich without hiding it in the background).
+* **Brightness:** Set around **50% – 60%** (keeps the reverb tail warm rather than harsh or metallic).
+
+---
+
+### Step-by-Step Adjustments on Your Current Screen
+
+1. Turn the **Reverb Time** knob up from **286 ms** to around **1.50 s (1500 ms)**.
+2. Turn the **Pre-Delay** knob up from **20** to **35 ms**.
+3. Keep **Dry/Wet** around **8.00% to 10.00%** (adjust to taste—less for subtle polish, more for dramatic ballads).
+4. Under **Reverb Tone**, lower **Hi Gain** slightly to **-3.0 dB** to prevent harsh sibilance (*S* and *T* sounds) from ringing out in the reverb.
+
+<img width="1277" height="984" alt="image" src="https://github.com/user-attachments/assets/0c74e51c-be9f-43f3-b861-44680f0b653a" />
+
+Your reverb settings are **spot on for singing**! Everything aligns with a high-quality vocal production chain.
+
+---
+
+### Verification Checklist
+
+* **Preset:** **Plate*** (Ideal choice for smooth, classic vocal reverberation).
+* **Pre-Delay:** **30 ms** (Leaves space for the lead vocals to stay crisp and up-front).
+* **Reverb Time:** **1500 ms (1.5 s)** (Creates a rich, musical decay tail).
+* **Brightness:** **58.81%** (Keeps the vocal tail warm and natural).
+* **Hi Gain (Reverb Tone):** **-3.0 dB** (Prevents harsh *S* and *T* sibilance from cluttering the tail).
+* **Dry/Wet:** **10.00%** (Sits right in the sweet spot for a lush vocal blend).
+
+---
+
+### Final Mixing Tip
+
+Play your song with the backing music turned on. If the singing feels a bit too far away in the mix, nudge **Dry/Wet** down to **8.00%**. If you want a more dramatic, atmospheric ballad feel, bump it up to **12.00%**.
