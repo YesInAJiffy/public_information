@@ -31,6 +31,56 @@ Click **Normalize** and your audio levels are good to go!
 
 # Sound Control
 
+To polish a vocal track for singing in Fairlight, you apply processing in a specific signal order: **Clean (EQ)** $\rightarrow$ **Smooth (Compression)** $\rightarrow$ **Space (Reverb)**.
+
+---
+
+### Core Audio Terms Explained
+
+* **Dynamic Range:** The difference between your softest whisper and your loudest belt.
+* **Frequency (Hz/kHz):** Pitch height. Lows ($20\text{–}250\text{ Hz}$) are bass/rumble, Mids ($250\text{–}4,000\text{ Hz}$) hold body and speech clarity, and Highs ($4\text{–}20\text{ kHz}$) add brightness and "air."
+* **Threshold:** The volume trigger point where an effect (like a compressor) turns ON.
+* **Ratio:** The strength of volume reduction applied once audio exceeds the threshold.
+* **Dry/Wet:** The mix ratio between original unaffected voice (**Dry**) and processed effect sound (**Wet**).
+
+---
+
+### The Recommended Singing Signal Chain in Fairlight
+
+#### 1. Equalization (EQ) — Shape Tone & Remove Mud
+
+* **Why:** Cleans up unwanted room noise so the singing sounds pristine.
+* **How:** Double-click the **EQ graph** on your track strip in the Mixer.
+* **Settings:**
+* **Band 1 (High Pass Filter):** Icon set to **Low Cut**. Set frequency to **80 Hz** to cut low rumble.
+* **Band 3 (Mids):** Icon set to **Bell**. Set frequency to **250 Hz – 350 Hz**, lowering gain to **-3.0 dB** to clear "boxy" room tone.
+* **Band 5 (Presence):** Icon set to **High Shelf** or **Bell**. Set frequency to **3.5 kHz** with a **+1.5 dB** boost to help vocal lines stand out.
+* **Band 6 (Air):** Icon set to **High Shelf**. Set frequency to **10 kHz** with a **+1.0 dB** boost for a silky sheen.
+
+
+
+#### 2. Compressor — Smooth Out Volume Spikes
+
+* **Why:** Controls volume spikes when you sing loud, keeping soft notes clear without distortion.
+* **How:** Double-click the **Dynamics** box on your track strip and toggle **Compressor ON**.
+* **Settings:**
+* **Threshold:** **-20.0 dB** (adjust until Gain Reduction meter ticks down by $-3\text{ to }-5\text{ dB}$ on loud notes).
+* **Ratio:** **3.0:1** (or 4:1 for aggressive genre styles).
+* **Attack:** **10 ms** | **Release:** **100 ms** | **Mix:** **100**.
+
+
+
+#### 3. Reverb — Add Professional Space & Depth
+
+* **Why:** Gives the vocals a lush, studio-quality tail that sits naturally over backing tracks.
+* **How:** In the **Effects** panel, search for **Reverb** and drag it directly onto your track FX slot.
+* **Settings:**
+* **Preset:** **Plate** or **Medium Hall**.
+* **Pre-Delay:** **30 ms – 35 ms** (keeps lead vocals upfront before the echo begins).
+* **Reverb Time:** **1.50 s (1500 ms)** (creates a smooth, musical decay).
+* **Dry/Wet:** **8.00% – 10.00%** (gives subtle atmospheric depth without washing out speech crispness).
+
+  
 Equalization (EQ) shapes how audio sounds by boosting or cutting specific frequency ranges. Human hearing spans roughly **20 Hz (deep bass)** to **20,000 Hz / 20 kHz (high treble)**, and these settings clean up unwanted noise while highlighting the best traits of a vocal track.
 
 ---
