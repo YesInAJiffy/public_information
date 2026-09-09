@@ -1,3 +1,25 @@
+# Video inside a Frame.
+To show a video inside a circle over another clip in DaVinci Resolve, you can create a circular mask using either the **Edit** page or the **Fusion** page.
+
+
+### Method 2: Using an Alpha Output in the Color Page (Most Reliable Method)
+
+1. Place your background video on **Track 1** and the video to be circled on **Track 2**.
+2. Select the clip on **Track 2** and switch to the **Color** page.
+3. In the node graph area, right-click on an empty space and select **Add Alpha Output**.
+4. Drag a blue line from the blue dot (alpha) on your node to the blue alpha output node on the right.
+5. Go to the **Window** panel (the circle icon in the middle toolbar) and select the **Circle** power window.
+6. Adjust the size, position, and soft edge settings of the circle on your viewer. Only the area inside the circle will now remain visible over the background track.
+
+---
+
+### Method 3: Using Fusion (For Advanced Control)
+
+1. Place your background clip on **Track 1** and the overlay clip on **Track 2**.
+2. Select the clip on **Track 2** and switch to the **Fusion** page.
+3. In the node graph, press `Shift + Spacebar`, search for **Ellipse**, and click **Add**.
+4. Drag the output of the **Ellipse** node into the gray effect mask input (blue triangle) of the **MediaIn1** node.
+5. Select the **Ellipse** node to adjust its width, height, position, or soft edges in the inspector panel.
 
 # Stabilize the video.
 <img width="533" height="281" alt="image" src="https://github.com/user-attachments/assets/f6377906-d251-4788-8d60-c15f66408b1c" />
