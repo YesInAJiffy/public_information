@@ -1,3 +1,7 @@
+
+# Color Balancing
+<img width="1581" height="1058" alt="image" src="https://github.com/user-attachments/assets/f7587ac4-504a-4fc0-9849-32a3c34714ab" />
+
 # GREEN COLOR
 
 
