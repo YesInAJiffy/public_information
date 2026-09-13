@@ -1,3 +1,21 @@
+# GREEN COLOR
+
+
+### Step-by-Step Delta Keyer Setup
+
+1. **Open Fusion:** Place your playhead over the clip on the Edit page and click the **Fusion** tab at the bottom.
+2. **Add Delta Keyer:** Press `Shift + Spacebar`, type `Delta Keyer`, and press **Add**. (Insert it between `MediaIn1` and `MediaOut1`).
+3. **Pick the Color:** In the Inspector panel on the right, find **Background Color**. Drag the eyedropper icon directly onto the green screen in your viewer.
+4. **Refine the Matte:**
+* Change your view mode in the Inspector from **Final Result** to **Matte**. Your subject should be solid white and the background solid black.
+* Open the **Matte** tab in the Inspector. Adjust **High** (pull left) to make the background pitch black, and **Low** (pull right) to make your subject completely solid white.
+* Switch the view back to **Final Result**.
+
+
+5. **Clean the Fringe:** Go to the **Fringe** tab in the Delta Keyer to fine-tune spill suppression—it automatically converts any green light reflecting on skin or ears into natural skin tone shadows.
+
+
+
 # Video inside a Frame.
 To show a video inside a circle over another clip in DaVinci Resolve, you can create a circular mask using either the **Edit** page or the **Fusion** page.
 
