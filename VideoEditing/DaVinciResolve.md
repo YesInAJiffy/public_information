@@ -17,6 +17,9 @@ This setup shows a **Power Window** paired with a **Key (Alpha Mask)** output co
 
 <img width="587" height="362" alt="image" src="https://github.com/user-attachments/assets/d0e00237-8603-437e-b2a0-c0cfde7345fd" />
 
+<img width="1008" height="406" alt="image" src="https://github.com/user-attachments/assets/4ba6d030-c817-4d6f-b4bb-76a0187a7dfb" />
+
+
 <img width="1581" height="1058" alt="image" src="https://github.com/user-attachments/assets/f7587ac4-504a-4fc0-9849-32a3c34714ab" />
 
 # GREEN COLOR
