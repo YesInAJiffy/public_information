@@ -1,4 +1,24 @@
+# Removing Thumping, sound made while moving Microphone
+It is right there in your screenshot—the Equalizer panel is actually open on the far-right side, but the **High-Pass (Low-Cut)** filter just needs to be turned on.
 
+To configure the High-Pass Filter:
+
+1. **Locate Band 1 (`B 1`):** In the bottom-right section of your screen, look at the row of buttons labeled **`B 1`**, `B 2`, `B 3`, etc., right below the graph.
+2. **Turn on Band 1:** Click the **`B 1`** button so it highlights (enables).
+3. **Select High-Pass Mode:** Click the drop-down icon next to `B 1` (currently showing a low-shelf curve shape **`\__`**) and select the **High-Pass / Low-Cut** shape (the curve that looks like **`/¯¯`**).
+4. **Adjust Frequency:** Drag the frequency slider for `B 1` (currently set at `97 Hz`) up to around **`100 Hz – 120 Hz`**.
+<img width="516" height="597" alt="image" src="https://github.com/user-attachments/assets/54f28d02-126a-4f65-80ec-ab156aa197ce" />
+<img width="1024" height="582" alt="image" src="https://github.com/user-attachments/assets/151cb8e6-27f9-43b4-9e80-d20c67bf1c48" />
+
+---
+
+### Alternative (Track-Wide EQ via the Mixer)
+
+If you want to apply the EQ to the **entire Audio 4 track** instead of just this single clip:
+
+1. In the middle **Mixer** panel, look at the **`Audio 4`** strip.
+2. Look at the box labeled **`Order`** (where it shows green/blue tags: `FX` `DY` `EQ`).
+3. **Double-click the `EQ` box** in the `Audio 4` column. This opens the full Track Equalizer window where you can turn on Band 1 (`Band 1` button at the far left) and enable the High-Pass curve filter.
 # Color Balancing
 
 Use only the serial node, there are two nodes used here though.
