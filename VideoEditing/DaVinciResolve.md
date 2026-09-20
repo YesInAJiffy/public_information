@@ -1,3 +1,7 @@
+# INCREASE BASE AND REMOVE THUMPING BHA SOUND
+<img width="501" height="571" alt="image" src="https://github.com/user-attachments/assets/027e3319-fbca-4f06-9fb9-3ddc4fae67b7" />
+
+
 # Removing Thumping, sound made while moving Microphone
 It is right there in your screenshot—the Equalizer panel is actually open on the far-right side, but the **High-Pass (Low-Cut)** filter just needs to be turned on.
 
