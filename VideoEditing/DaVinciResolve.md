@@ -1,3 +1,6 @@
+# Suggested for singing
+<img width="498" height="475" alt="image" src="https://github.com/user-attachments/assets/ebc72bb8-bdc1-48ac-b34c-b253a815aee6" />
+
 # INCREASE BASE AND REMOVE THUMPING BHA SOUND
 <img width="501" height="571" alt="image" src="https://github.com/user-attachments/assets/027e3319-fbca-4f06-9fb9-3ddc4fae67b7" />
 Copy -> Ctrl C
